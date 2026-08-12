@@ -1,0 +1,6 @@
+{
+  "name": "Zeal Construction",
+  "description": "Official website for Zeal Construction - Waterproofing, Engineers & Contractors in Bengaluru, Karnataka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
