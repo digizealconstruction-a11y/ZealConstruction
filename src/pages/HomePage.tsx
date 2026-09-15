@@ -32,6 +32,9 @@ import {
   PROJECTS,
   TESTIMONIALS,
   WHY_CHOOSE_REASONS,
+  SEO_TARGET_LOCATIONS,
+  SEO_TOP_KEYWORDS,
+  SEO_LOCAL_FAQS,
 } from '../data/companyData';
 import { PageRoute } from '../types';
 import heroBuildingImg from '../assets/images/commercial_building_hero_1786531195860.jpg';
@@ -402,6 +405,88 @@ export const HomePage: React.FC<HomePageProps> = ({
               <span>Request a Free Quote</span>
               <ArrowRight className="w-4 h-4" />
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO REGIONAL SERVICE HUBS & KEYWORDS SECTION */}
+      <section className="py-16 bg-slate-900 text-slate-100 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider">
+              <MapPin className="w-3.5 h-3.5" />
+              <span>Regional Service Coverage</span>
+            </div>
+            <h2 className="text-3xl font-extrabold text-white">
+              #1 Waterproofing Specialists & Civil Contractors in Bangalore & Chennai
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+              Zeal Construction provides certified chemical waterproofing, terrace damp proofing, basement injection grouting, and turnkey civil works across major residential and commercial hubs in Karnataka and Tamil Nadu.
+            </p>
+          </div>
+
+          {/* Regional Hub Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {SEO_TARGET_LOCATIONS.map((loc) => (
+              <div key={loc.city} className="bg-slate-950/80 rounded-2xl p-6 border border-slate-800 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg border border-amber-500/30">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white">{loc.city} Operations</h3>
+                    <p className="text-xs text-amber-400/90 font-medium">{loc.state} Region</p>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-400">
+                  <span className="font-semibold text-slate-300">Hub Location:</span> {loc.hubAddress}
+                </p>
+                <div>
+                  <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Key Areas Covered:</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {loc.popularLocalities.map((locality) => (
+                      <span key={locality} className="px-2.5 py-1 bg-slate-900 border border-slate-800 rounded-md text-[11px] text-slate-300">
+                        {locality}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Popular High-Intent Search Keywords Tags */}
+          <div className="bg-slate-950/60 rounded-2xl p-6 border border-slate-800 space-y-4">
+            <h3 className="text-sm font-bold text-amber-400 uppercase tracking-wider">
+              Popular Search Services in Bangalore & Chennai
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {SEO_TOP_KEYWORDS.map((kw) => (
+                <span key={kw} className="px-3 py-1.5 bg-slate-900/90 hover:bg-slate-800 border border-slate-800 text-xs font-medium text-slate-300 rounded-lg transition-colors cursor-default">
+                  ✓ {kw}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Local SEO FAQs */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-white text-center">
+              Frequently Asked Questions (Waterproofing Bangalore & Chennai)
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {SEO_LOCAL_FAQS.map((faq, idx) => (
+                <div key={idx} className="bg-slate-950/70 border border-slate-800 rounded-xl p-5 space-y-2">
+                  <h4 className="text-sm font-bold text-amber-400 flex items-start gap-2">
+                    <span className="text-slate-500 font-normal">Q:</span>
+                    <span>{faq.question}</span>
+                  </h4>
+                  <p className="text-xs text-slate-300 leading-relaxed pl-5">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

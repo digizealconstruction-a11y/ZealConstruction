@@ -56,7 +56,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             Contact Us
           </h1>
           <p className="text-slate-300 max-w-2xl text-base leading-relaxed">
-            Reach out to Lakshminarayanan and the Zeal Construction engineering team in Bengaluru for project consultations, site evaluations, or waterproofing estimates.
+            Reach out to Lakshminarayanan and the Zeal Construction engineering team for project consultations, site evaluations, or waterproofing estimates across Bengaluru and Chennai.
           </p>
         </div>
       </section>
@@ -265,35 +265,39 @@ export const ContactPage: React.FC<ContactPageProps> = ({
         </div>
       </section>
 
-      {/* GOOGLE MAP EMBED */}
+      {/* OFFICE LOCATION DETAILS */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg space-y-4 p-4 sm:p-6">
-          <div className="flex items-center justify-between px-2">
-            <div>
-              <h3 className="text-xl font-bold text-slate-900">Visit Our Office</h3>
-              <p className="text-xs text-slate-500">BTM 1st Stage, Bengaluru, Karnataka 560029</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Bengaluru HQ */}
+          <div className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg p-6 sm:p-8 space-y-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold">
+              <MapPin className="w-3.5 h-3.5 text-amber-600" />
+              <span>Bengaluru Headquarters</span>
             </div>
-            <a
-              href="https://maps.google.com/?q=Zeal+Construction+BTM+1st+Stage+Bengaluru"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-2 px-4 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl shadow-sm transition-colors cursor-pointer"
-            >
-              Open in Google Maps
-            </a>
+            <h3 className="text-xl font-bold text-slate-900">Bangalore (BTM 1st Stage)</h3>
+            <p className="text-sm text-slate-600">
+              {COMPANY_INFO.address}
+            </p>
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-700 space-y-1">
+              <p>🗓 <strong>Hours:</strong> Mon – Sat: 9:00 AM – 7:00 PM</p>
+              <p>📍 <strong>Landmark:</strong> Near Dharmaram College, 7th B Main</p>
+            </div>
           </div>
 
-          <div className="w-full h-80 rounded-2xl overflow-hidden border border-slate-200">
-            <iframe
-              title="Zeal Construction Office Location"
-              src={COMPANY_INFO.mapEmbedUrl}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          {/* Chennai Hub */}
+          <div className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg p-6 sm:p-8 space-y-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold">
+              <MapPin className="w-3.5 h-3.5 text-amber-600" />
+              <span>Chennai Regional Division</span>
+            </div>
+            <h3 className="text-xl font-bold text-slate-900">Chennai Operations Hub</h3>
+            <p className="text-sm text-slate-600">
+              Serving Anna Nagar, OMR, Adyar, Velachery, Guindy, T. Nagar, Porur, and all surrounding areas in Tamil Nadu.
+            </p>
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-700 space-y-1">
+              <p>🗓 <strong>Consultations:</strong> On-Site Site Audits & Inspection</p>
+              <p>📞 <strong>Direct Line:</strong> +91 98866 30779</p>
+            </div>
           </div>
         </div>
       </section>

@@ -14,11 +14,93 @@ export const COMPANY_INFO = {
   email: 'lakshminarayanan@zealconstruction.in',
   address:
     'Dharmaram College, 32, 7th B Main, Post, BTM 1st Stage, Bengaluru, Karnataka 560029',
-  city: 'Bengaluru, Karnataka',
+  city: 'Bengaluru & Chennai',
   pincode: '560029',
-  mapEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.857642352825!2d77.60831207507548!3d12.916892987393438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fc514868eb%3A0x8892bebe30a38d78!2s7th%20B%20Main%20Rd%2C%20BTM%201st%20Stage%2C%20Bengaluru%2C%20Karnataka%20560029!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin',
+  serviceRegions: ['Bengaluru (Bangalore)', 'Chennai (Tamil Nadu)'],
 };
+
+export const SEO_TARGET_LOCATIONS = [
+  {
+    city: 'Bangalore (Bengaluru)',
+    state: 'Karnataka',
+    hubAddress: 'BTM 1st Stage, Bengaluru, Karnataka 560029',
+    popularLocalities: [
+      'BTM Layout',
+      'Koramangala',
+      'Indiranagar',
+      'Whitefield',
+      'HSR Layout',
+      'Electronic City',
+      'JP Nagar',
+      'Jayanagar',
+      'Yelahanka',
+      'Banashankari',
+      'Hebbal',
+      'Sarjapur Road',
+      'Marathahalli',
+      'Rajajinagar',
+    ],
+  },
+  {
+    city: 'Chennai',
+    state: 'Tamil Nadu',
+    hubAddress: 'OMR & Anna Nagar Regional Operations, Chennai, Tamil Nadu',
+    popularLocalities: [
+      'Anna Nagar',
+      'Adyar',
+      'Velachery',
+      'OMR (Old Mahabalipuram Rd)',
+      'Guindy',
+      'T. Nagar',
+      'Porur',
+      'Tambaram',
+      'Nungambakkam',
+      'Kilpauk',
+      'Perungudi',
+      'Sholinganallur',
+      'Medavakkam',
+      'Mylapore',
+    ],
+  },
+];
+
+export const SEO_TOP_KEYWORDS = [
+  'Waterproofing Contractors in Bangalore',
+  'Waterproofing Services in Chennai',
+  'Terrace Waterproofing Specialist Bangalore',
+  'Roof Leakage Repair Chennai',
+  'Bathroom Leakage Repair Without Breaking Tiles',
+  'Basement Waterproofing & Injection Grouting',
+  'Wall Dampness Treatment Bangalore & Chennai',
+  'Structural Waterproofing Engineers',
+  'Villa Roof Waterproofing Contractors',
+  'Civil Construction & Waterproofing Company',
+  'Expansion Joint Treatment Chennai',
+  'UG Sump & Overhead Tank Waterproofing',
+];
+
+export const SEO_LOCAL_FAQS = [
+  {
+    question: 'Why choose Zeal Construction for waterproofing in Bangalore & Chennai?',
+    answer:
+      'Zeal Construction provides certified civil engineers and specialized waterproofing chemicals customized for South India climate conditions. Whether handling heavy monsoon seepage in Bangalore or coastal humidity & saline corrosion in Chennai, our multi-layer polymeric coatings and crystalline treatments come with a 10+ year warranty.',
+  },
+  {
+    question: 'Can bathroom leakage be fixed without breaking tiles in Chennai and Bangalore homes?',
+    answer:
+      'Yes! We specialize in advanced non-destructive PU (Polyurethane) pressure grouting and transparent nano-sealer coatings that penetrate deep into grout joints without chipping or breaking costly bathroom floor tiles.',
+  },
+  {
+    question: 'How long does terrace waterproofing last in coastal climates like Chennai and heavy rains in Bangalore?',
+    answer:
+      'Our elastomeric heat-reflective terrace waterproofing membrane systems are UV-stabilized and engineered to withstand extreme thermal expansion, standing water, and heavy monsoon rains for up to 10–15 years with minimal maintenance.',
+  },
+  {
+    question: 'Do you offer free site inspection in Bangalore and Chennai?',
+    answer:
+      'Yes, our senior structural engineers conduct free on-site moisture audits and thermal imaging leakage assessments across all major localities in Bangalore and Chennai before providing a detailed, transparent quotation.',
+  },
+];
 
 export const WATERPROOFING_APPLICATIONS: WaterproofingApplication[] = [
   {
@@ -416,6 +498,15 @@ export const TESTIMONIALS: TestimonialItem[] = [
     author: 'Builder',
     role: 'Commercial Builder',
     location: 'Bengaluru',
+    rating: 5,
+  },
+  {
+    id: '5',
+    quote:
+      'Living in coastal Chennai near OMR, humidity and salt air caused heavy roof seepage and paint peeling. Zeal Construction executed an outstanding heat-reflective terrace waterproofing job. Zero leaks and the house stays much cooler now!',
+    author: 'K. Senthil Nathan',
+    role: 'Villa Owner',
+    location: 'Anna Nagar, Chennai',
     rating: 5,
   },
 ];

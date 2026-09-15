@@ -75,9 +75,9 @@ export const Header: React.FC<HeaderProps> = ({
               <Mail className="w-3.5 h-3.5 text-amber-500" />
               <span>{COMPANY_INFO.email}</span>
             </a>
-            <div className="hidden xl:flex items-center gap-1.5 text-slate-400">
+            <div className="hidden xl:flex items-center gap-1.5 text-slate-300">
               <MapPin className="w-3.5 h-3.5 text-amber-500" />
-              <span>BTM 1st Stage, Bengaluru, Karnataka 560029</span>
+              <span>Serving Bengaluru & Chennai</span>
             </div>
           </div>
 

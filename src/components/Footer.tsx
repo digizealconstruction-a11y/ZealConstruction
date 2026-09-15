@@ -60,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({
               <ZealLogo variant="full" height={48} />
             </button>
             <p className="text-xs text-slate-400 leading-relaxed pt-2">
-              Zeal Construction is a premier Bengaluru-based civil engineering and waterproofing contracting firm. We deliver specialized waterproofing, structural restoration, and residential construction solutions designed for long-term durability.
+              Zeal Construction is a premier civil engineering and waterproofing contracting firm operating across Bengaluru and Chennai. We deliver specialized waterproofing, structural restoration, and residential construction solutions designed for long-term durability.
             </p>
             <div className="pt-2 flex items-center gap-3 text-xs text-amber-400 font-bold">
               <Shield className="w-4 h-4 text-amber-500" />
@@ -171,7 +171,7 @@ export const Footer: React.FC<FooterProps> = ({
           <div>
             <p>Copyright © 2025 Zeal Construction. All Rights Reserved.</p>
             <p className="text-[11px] text-slate-600 mt-0.5">
-              Water Proofing, Engineers & Contractors • Bengaluru, KA
+              Water Proofing, Engineers & Contractors • Bengaluru & Chennai
             </p>
           </div>
 
